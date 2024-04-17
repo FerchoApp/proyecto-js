@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import Button2 from "../components/Button2.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Button />
+  <Button text="Cancelar" />
+  <Button text="Agregar" />
+  <Button text="Banear" isRounded/>
+  <Button2>
+    <span slot="text">
+        texto
+    </span>
+    <span slot="icon">
+        #
+    </span>
+  </Button2>
+</Layout>
